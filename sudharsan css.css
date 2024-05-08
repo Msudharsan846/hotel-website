@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn-primary {
+    background-color: #16a083;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #119764;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 50px;
+    z-index: 12;
+    opacity: 0.85;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+}
+
+/* Showcase Styles */
+.showcase-area {
+    height: 50vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.1444), rgba(255, 255, 255, 0.336)), url('https://i.postimg.cc/wT3TQS3V/headerimage2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+/* About Section Styles */
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-wrapper h2 {
+    font-size: 2.3rem;
+}
+
+.about-wrapper p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150px);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* Food Container Styles */
+.food-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-container img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.img-content {
+    position: absolute;
+    top: 70px; /* Corrected missing unit in 'top' value */
+}
